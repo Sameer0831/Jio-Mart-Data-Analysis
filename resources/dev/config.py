@@ -29,3 +29,21 @@ iv = "Initialization31"
 aws_access_key = "U35BbjyA7AWxUf5XH3aQU3wPmDn289PmiLg498ZwEtQ="
 aws_secret_key = "cKZXL34HWRBNp4QgFANhAcZPkpXXkpi/s4r+E7nDuFSK0oJZi36kdXJL3vmxILyl"
 
+# To manage configurations and requirements specific to AWS s3 environments.
+bucket_name = "jiomart-data-analysis-bucket "
+s3_customer_datamart_directory = "customer_data_mart"
+s3_sales_datamart_directory = "sales_data_mart"
+s3_sales_partitioned_datamart_directory="sales_partitioned_data_mart"
+s3_source_directory = "sales_data/"
+s3_error_directory = "sales_data_error/"
+s3_processed_directory = "sales_data_processed/"
+
+
+
+# File Download location
+# To manage configurations and requirements specific to local development or testing environments. This can be any location, Not mandatory to have them in the project location only
+local_directory = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\file_from_s3\\"
+customer_data_mart_local_file = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\customer_data_mart\\"
+sales_team_data_mart_local_file = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\sales_team_data_mart\\"
+sales_team_data_mart_partitioned_local_file = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\sales_partition_data\\"
+error_folder_path_local = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\error_files\\"
