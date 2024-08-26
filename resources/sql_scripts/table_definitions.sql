@@ -139,7 +139,7 @@ CREATE TABLE s3_bucket_info (
 
 --s3 bucket data
 INSERT INTO s3_bucket_info (bucket_name, status, created_date, updated_date)
-VALUES ('youtube-project-testing', 'active', NOW(), NOW());
+VALUES ('jiomart-data-analysis-bucket', 'active', NOW(), NOW());
 
 
 --Data Mart customer
