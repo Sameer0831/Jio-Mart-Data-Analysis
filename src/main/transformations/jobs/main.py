@@ -5,6 +5,7 @@ from src.main.utility.encrypt_decrypt import *
 from src.main.utility.s3_client_object import *
 from src.main.utility.logging_config import *
 from src.main.utility.sql_session_script import *
+from src.main.DataRead.s3_fileRead import *
 
 # =====================
 # AWS Credentials Retrieval
@@ -89,3 +90,17 @@ else:
     logger.info("Last run was successful!!!")
 
 # Reading files from s3
+# bucket_name = config.bucket_name.strip()  # If found any error then check and Remove any leading or trailing whitespace
+
+try:
+    s3_reader = S3Reader()
+    folder_path = config.s3_source_directory  # Source data directory that contains data files.
+    s3_absolute_file_path = s3_reader.list_files(s3_client, config.bucket_name, folder_path=folder_path)
+    logger.info("Absolute path on s3 bucket for csv file %s ", s3_absolute_file_path)
+    if not s3_absolute_file_path:
+        logger.info(f"No files available at {folder_path}")
+        raise Exception("No Data Available to process")
+
+except Exception as e:
+    logger.info("Exited with error:- %s", e)
+    raise e
