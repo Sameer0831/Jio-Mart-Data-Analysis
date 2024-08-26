@@ -24,7 +24,7 @@ sales_persons = {
 start_date = datetime(2023, 3, 3)
 end_date = datetime(2023, 8, 20)
 
-file_location = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\"
+file_location = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\spark_data"
 csv_file_path = os.path.join(file_location, "sales_data.csv")
 with open(csv_file_path, "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
