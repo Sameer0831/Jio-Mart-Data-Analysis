@@ -1,7 +1,7 @@
 -- product_staging_table -> Used to keep track of the processes, whether they're completely done or failed.
 -- It is done using status column with Active/InActive values. Shortly (A/I)
--- A - Active : Process is completed
--- I - InActive : Process is failed somewhere
+-- A - Active : Process is failed somewhere
+-- I - InActive : Process is completed
 
 CREATE TABLE product_staging_table (
     id INT AUTO_INCREMENT PRIMARY KEY,
