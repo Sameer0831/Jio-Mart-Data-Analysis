@@ -32,7 +32,7 @@ input_date = datetime.strptime(input_date_str, "%Y-%m-%d")
 csv_file_path = os.path.join(file_location, f"sales_data_{input_date_str}.csv")
 with open(csv_file_path, "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(["customer_id", "store_id", "product_name", "sales_date", "sales_person_id", "price", "quantity", "total_cost", "payment_mode"])
+    csvwriter.writerow(["customer_id", "store_id", "product_name", "sales_date", "sales_person_id", "price", "quantity", "total_cost", "payment_mode", "temp_data1", "temp_data2"])
 
     for _ in range(1000):
         customer_id = random.choice(customer_ids)
@@ -44,8 +44,10 @@ with open(csv_file_path, "w", newline="") as csvfile:
         price = product_data[product_name]
         total_cost = price * quantity
         payment_mode = random.choice(["cash", "UPI"])
+        temp_data1 = random.choice(["Sam", "Harshi"])
+        temp_data2 = random.choice(["King", "Queen"])
 
         csvwriter.writerow(
-            [customer_id, store_id, product_name, sales_date.strftime("%Y-%m-%d"), sales_person_id, price, quantity, total_cost, payment_mode])
+            [customer_id, store_id, product_name, sales_date.strftime("%Y-%m-%d"), sales_person_id, price, quantity, total_cost, payment_mode, temp_data1, temp_data2])
 
     print("CSV file generated successfully:", csv_file_path)
