@@ -64,10 +64,9 @@ mandatory_columns = ["customer_id","store_id","product_name","sales_date","sales
 
 
 
-
-
 # File Download location
 # To manage configurations and requirements specific to local development or testing environments. This can be any location, Not mandatory to have them in the project location only
+# At this local directory, the files gets downloaded from s3.
 local_directory = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\file_from_s3\\"
 customer_data_mart_local_file = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\customer_data_mart\\"
 sales_team_data_mart_local_file = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\sales_team_data_mart\\"
