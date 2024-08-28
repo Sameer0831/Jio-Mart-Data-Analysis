@@ -523,6 +523,6 @@ input("Press enter to terminate > ")
 
 # Every thing will be deleted after the process is completed. Like sales_data/ folder in our s3-bucket
 # So first run src/test/sales_data_upload_to_s3.py file.
-# Make sure that our local directory contains the required data files. At "src/test/generate_data* " files
-# Example:
+# Make sure that our local directory contains the required data files. Example Location:
 # file_location = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\spark_data\\sales_data_to_s3"
+# if there is no data at the specified file location the run these "src/test/generate_data* " files first
