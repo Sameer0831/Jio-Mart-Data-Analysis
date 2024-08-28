@@ -33,7 +33,7 @@ with open(csv_file_path, "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(["customer_id", "product_name", "sales_date", "sales_person_id", "price", "quantity", "total_cost", "payment_mode"])
 
-    for _ in range(200):
+    for _ in range(1000):
         customer_id = random.choice(customer_ids)
         product_name = random.choice(list(product_data.keys()))
         sales_date = input_date
