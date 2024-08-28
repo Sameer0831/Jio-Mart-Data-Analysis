@@ -21,3 +21,7 @@ def upload_to_s3(s3_directory, s3_bucket, local_file_path):
 s3_directory = "sales_data/"
 s3_bucket = "jiomart-data-analysis-bucket"
 upload_to_s3(s3_directory, s3_bucket, local_file_path)
+
+# To confirm that we dont process the json data here in our project and to understand the concept of schema validation add a json file and some csv files manually in the specified location above.
+# add any json file. These unwanted files, can be trimmed, removed and thrown to error files.
+

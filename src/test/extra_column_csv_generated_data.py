@@ -21,7 +21,7 @@ sales_persons = {
     123: [7, 8, 9]
 }
 
-file_location = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\spark_data"
+file_location = "C:\\Users\\samee\\OneDrive\\Desktop\\Jio-DataSets\\spark_data\\sales_data_to_s3"
 
 if not os.path.exists(file_location):
     os.makedirs(file_location)
